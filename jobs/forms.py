@@ -20,10 +20,10 @@ class JobSearchForm(forms.Form):
     jobTitle = forms.CharField(max_length=200, required=False)
 
 
-class CreateUserForm(UserCreationForm): # CreateUserForm je nasa forma za kreiranje Usera
-    class Meta:                         # ona nasljedjuje sve iz built-in djangove forme,
-        model = User                    # za krerianje usera, ali mi zelimo na tu formu dodati,
-        fields = [                      # nova pola npr. email
+class CreateUserForm(UserCreationForm): 
+    class Meta:                         
+        model = User                    
+        fields = [                     
             'username',
             'email',
             'password1',
