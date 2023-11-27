@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Job
 from .forms import JobForm, JobSearchForm, CreateUserForm
-from django.contrib.auth.forms import UserCreationForm   # ovo je built-in forma za kreiranje usera
+from django.contrib.auth.forms import UserCreationForm   
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
