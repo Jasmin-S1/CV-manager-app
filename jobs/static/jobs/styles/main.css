@@ -1,0 +1,13 @@
+img {
+    width: auto;
+    height: auto;
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 20%;
+}
+
+.tableTitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px;
+}

@@ -1,0 +1,17 @@
+{% load bootstrap5 %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'jobs/styles/main.css' %}">
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <img src="{% static 'jobs/images/logo.png' %}">
+ 
+  <form class="form-inline" method="post" action="{% url 'job_search' %}">
+    {% csrf_token %}
+    <input class="form-control mr-sm-2" type="text" name="jobTitle" placeholder="Search by Position" aria-label="Search by Position">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+  <div>
+    <span>Hello, {{user}}</span>
+    <span><a href="{% url 'user_logout' %}"><button class="btn btn-outline-info my-2 my-sm-0">Logout</button></a></span>
+  </div>
+  </nav>
